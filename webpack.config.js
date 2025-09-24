@@ -1,7 +1,5 @@
-
 const defaultsDeep = require('lodash.defaultsdeep');
 const path = require('path');
-const repo = 'Paint-DogeisCut-Costume-GitHub';
 
 // Plugins
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -72,53 +70,50 @@ const base = {
 };
 
 module.exports = [
-  // playground app for the browser
-  defaultsDeep({}, base, {
-    devServer: {
-      contentBase: path.resolve(__dirname, 'playground'),
-      host: '0.0.0.0',
-      port: process.env.PORT || 8078
-    },
-    entry: {
-      playground: './src/playground/playground.jsx'
-    },
-    output: {
-      path: path.resolve(__dirname, 'playground'),
-      filename: '[name].js',
-      publicPath: `/${repo}/`
-    },
-    plugins: base.plugins.concat([
-      new HtmlWebpackPlugin({
-        template: 'src/playground/index.ejs',
-        filename: 'index.html',
-        title: 'Costume'
-      })
-    ])
-  }),
-
-  // library build for consumers
-  defaultsDeep({}, base, {
-    externals: {
-      minilog: 'minilog',
-      'prop-types': 'prop-types',
-      react: 'react',
-      'react-dom': 'react-dom',
-      'react-intl': 'react-intl',
-      'react-intl-redux': 'react-intl-redux',
-      'react-popover': 'react-popover',
-      'react-redux': 'react-redux',
-      'react-responsive': 'react-responsive',
-      'react-style-proptype': 'react-style-proptype',
-      'react-tooltip': 'react-tooltip',
-      redux: 'redux'
-    },
-    entry: {
-      'scratch-paint': './src/index.js'
-    },
-    output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: '[name].js',
-      libraryTarget: 'commonjs2'
-    }
-  })
+    // For the playground
+    defaultsDeep({}, base, {
+        devServer: {
+            contentBase: path.resolve(__dirname, 'playground'),
+            host: '0.0.0.0',
+            port: process.env.PORT || 8078
+        },
+        entry: {
+            playground: './src/playground/playground.jsx'
+        },
+        output: {
+            path: path.resolve(__dirname, 'playground'),
+            filename: '[name].js'
+        },
+        plugins: base.plugins.concat([
+            new HtmlWebpackPlugin({
+                template: 'src/playground/index.ejs',
+                title: 'Costume'
+            })
+        ])
+    }),
+    // For use as a library
+    defaultsDeep({}, base, {
+        externals: {
+            'minilog': 'minilog',
+            'prop-types': 'prop-types',
+            'react': 'react',
+            'react-dom': 'react-dom',
+            'react-intl': 'react-intl',
+            'react-intl-redux': 'react-intl-redux',
+            'react-popover': 'react-popover',
+            'react-redux': 'react-redux',
+            'react-responsive': 'react-responsive',
+            'react-style-proptype': 'react-style-proptype',
+            'react-tooltip': 'react-tooltip',
+            'redux': 'redux'
+        },
+        entry: {
+            'scratch-paint': './src/index.js'
+        },
+        output: {
+            path: path.resolve(__dirname, 'dist'),
+            filename: '[name].js',
+            libraryTarget: 'commonjs2'
+        }
+    })
 ];
