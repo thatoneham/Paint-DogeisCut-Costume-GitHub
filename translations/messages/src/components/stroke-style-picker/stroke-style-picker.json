@@ -1,0 +1,22 @@
+[
+  {
+    "id": "paint.paintEditor.join",
+    "description": "Label for the join component in the style picker",
+    "defaultMessage": "Join"
+  },
+  {
+    "id": "paint.paintEditor.cap",
+    "description": "Label for the cap component in the style picker",
+    "defaultMessage": "Cap"
+  },
+  {
+    "id": "paint.paintEditor.order",
+    "description": "Label for the order component in the style picker",
+    "defaultMessage": "Order"
+  },
+  {
+    "id": "paint.paintEditor.blending",
+    "description": "Label for the blending component in the style picker",
+    "defaultMessage": "Blending"
+  }
+]

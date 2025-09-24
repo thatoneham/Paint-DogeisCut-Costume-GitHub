@@ -1,0 +1,87 @@
+[
+  {
+    "id": "paint.paintEditor.costume",
+    "description": "The name of the document vector and subsequently the file.",
+    "defaultMessage": "Document Name"
+  },
+  {
+    "id": "paint.paintEditor.group",
+    "description": "Label for the button to group shapes",
+    "defaultMessage": "Group"
+  },
+  {
+    "id": "paint.paintEditor.ungroup",
+    "description": "Label for the button to ungroup shapes",
+    "defaultMessage": "Ungroup"
+  },
+  {
+    "id": "paint.paintEditor.undo",
+    "description": "Alt to image for the button to undo an action",
+    "defaultMessage": "Undo"
+  },
+  {
+    "id": "paint.paintEditor.redo",
+    "description": "Alt to image for the button to redo an action",
+    "defaultMessage": "Redo"
+  },
+  {
+    "id": "paint.paintEditor.forward",
+    "description": "Label for the `Send forward on canvas` button",
+    "defaultMessage": "Forward"
+  },
+  {
+    "id": "paint.paintEditor.backward",
+    "description": "Label for the `Send backward on canvas` button",
+    "defaultMessage": "Backward"
+  },
+  {
+    "id": "paint.paintEditor.front",
+    "description": "Label for the `Send to front of canvas` button",
+    "defaultMessage": "Front"
+  },
+  {
+    "id": "paint.paintEditor.back",
+    "description": "Label for the `Send to back of canvas` button",
+    "defaultMessage": "Back"
+  },
+  {
+    "id": "paint.paintEditor.more",
+    "description": "Label for dropdown to access more action buttons",
+    "defaultMessage": "More"
+  },
+  {
+    "id": "paint.paintEditor.documentProperties",
+    "description": "todo write this later",
+    "defaultMessage": "Document Properties"
+  },
+  {
+    "id": "paint.paintEditor.save",
+    "description": "todo write this later",
+    "defaultMessage": "Save"
+  },
+  {
+    "id": "paint.paintEditor.open",
+    "description": "todo write this later",
+    "defaultMessage": "Open"
+  },
+  {
+    "id": "paint.paintEditor.saveAs",
+    "description": "todo write this later",
+    "defaultMessage": "Save As"
+  },
+  {
+    "id": "paint.paintEditor.import",
+    "description": "todo write this later",
+    "defaultMessage": "Import"
+  },
+  {
+    "id": "paint.paintEditor.export",
+    "description": "todo write this later",
+    "defaultMessage": "Export"
+  },
+  {
+    "id": "paint.paintEditor.info",
+    "description": "todo write this later",
+    "defaultMessage": "Info"
+  }
+]
